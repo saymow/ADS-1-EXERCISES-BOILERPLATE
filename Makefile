@@ -1,13 +1,13 @@
 CC = gcc
 CFLAGS = -Wall                                 # -Wall: Enables recommended compiler warnings
-OBJECTS = main.o  
+OBJECTS = main.o
 
-run: main.exe  
-	main.exe
+run: main
+	main
 
-all: main.exe
+all: main
 
-main.exe: main.o 
+main: main.o
 	$(CC) -o main main.o $(CFLAGS)
 
 main.o: main.c
